@@ -35,7 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Types\PersonAddress.cs" />
-    <Compile Include="Types\AddressType.cs" />
+    <Compile Include="Types\Enumarations\AddressType.cs" />
     <Compile Include="Types\Author.cs" />
     <Compile Include="Types\Book.cs" />
     <Compile Include="Types\BookByCategories.cs" />
@@ -43,22 +43,23 @@
     <Compile Include="Types\BooksByAuthor.cs" />
     <Compile Include="Types\Category.cs" />
     <Compile Include="Types\City.cs" />
-    <Compile Include="Types\EMailAddressType.cs" />
-    <Compile Include="Types\Gender.cs" />
+    <Compile Include="Types\Enumarations\EMailAddressType.cs" />
+    <Compile Include="Types\Enumarations\Gender.cs" />
     <Compile Include="Types\Country.cs" />
     <Compile Include="Types\EMailAddress.cs" />
-    <Compile Include="Types\IEntity.cs" />
+    <Compile Include="Types\BaseTypes\IEntity.cs" />
     <Compile Include="Types\Library.cs" />
-    <Compile Include="Types\LibraryBaseAddress.cs" />
+    <Compile Include="Types\LibraryAddress.cs" />
     <Compile Include="Types\LibraryOfficer.cs" />
-    <Compile Include="Types\Person.cs" />
-    <Compile Include="Types\Address.cs" />
-    <Compile Include="Types\MemberRequest.cs" />
+    <Compile Include="Types\BaseTypes\Person.cs" />
+    <Compile Include="Types\BaseTypes\Address.cs" />
+    <Compile Include="Types\Request.cs" />
     <Compile Include="Types\Note.cs" />
     <Compile Include="Types\Phone.cs" />
-    <Compile Include="Types\PhoneType.cs" />
+    <Compile Include="Types\Enumarations\PhoneType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

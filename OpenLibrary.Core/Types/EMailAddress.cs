@@ -1,4 +1,5 @@
 ﻿using System;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.Core.Types
 {

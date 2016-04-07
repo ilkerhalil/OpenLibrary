@@ -8,19 +8,14 @@ namespace OpenLibrary.EntityFramework
         public OpenLibraryDbContext() 
             : base("DefaultConnection")
         {
-
+            
         }
 
-        public DbSet<Author> Authors { get; set; }
 
-        public DbSet<Person> Members { get; set; }
-
-        public DbSet<Phone> Phones { get; set; }
-
-        public DbSet<Address> Addresses { get; set; }
-
-        public DbSet<PersonAddress> PersonAddresses { get; set; }
-
+        public static OpenLibraryDbContext CreateLibraryDbContext()
+        {
+            return new OpenLibraryDbContext();
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -29,6 +24,7 @@ namespace OpenLibrary.EntityFramework
             modelBuilder.Configurations.Add(new PersonAddressConfiguration());
             modelBuilder.Configurations.Add(new PhoneConfiguration());
             modelBuilder.Configurations.Add(new AuthorConfiguration());
+            modelBuilder.Configurations.Add(new CategoryConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }

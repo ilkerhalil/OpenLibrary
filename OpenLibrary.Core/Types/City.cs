@@ -1,4 +1,5 @@
 ﻿using System;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.Core.Types
 {
@@ -9,8 +10,6 @@ namespace OpenLibrary.Core.Types
         public string CityCode { get; set; }
 
         public string CityName { get; set; }
-
-
 
     }
 }

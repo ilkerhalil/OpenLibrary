@@ -9,7 +9,7 @@ namespace OpenLibrary.EntityFramework
         {
             Property(p => p.Id).IsRequired();
             Property(p => p.AreaCode).HasMaxLength(3).IsRequired();
-            Property(p => p.Description).HasMaxLength(100).IsOptional();
+            Property(p => p.Description).HasMaxLength(1024).IsOptional();
             Property(p => p.IsDefaultContactNumber).IsRequired();
             Property(p => p.Number).HasMaxLength(10).IsRequired();
             Property(p => p.MemberId).IsRequired();

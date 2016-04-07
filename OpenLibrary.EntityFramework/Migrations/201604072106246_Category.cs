@@ -1,8 +1,9 @@
 namespace OpenLibrary.EntityFramework.Migrations
 {
+    using System;
     using System.Data.Entity.Migrations;
     
-    public partial class EigthMigration : DbMigration
+    public partial class Category : DbMigration
     {
         public override void Up()
         {

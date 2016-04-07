@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Core.Types.BaseTypes
 {
     public interface IEntity
     {

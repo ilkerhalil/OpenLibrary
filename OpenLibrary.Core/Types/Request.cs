@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Diagnostics.Eventing.Reader;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.Core.Types
 {
-    public class PersonRequest : IEntity
+    public class Request : IEntity
     {
         public Guid Id { get; set; }
 

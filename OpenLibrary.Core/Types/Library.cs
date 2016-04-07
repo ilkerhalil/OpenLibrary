@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.Core.Types
 {

@@ -1,6 +1,7 @@
 using System.Data.Entity.ModelConfiguration;
 using System.Security.Permissions;
 using OpenLibrary.Core.Types;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.EntityFramework
 {

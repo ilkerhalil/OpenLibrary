@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AuthorConfiguration.cs" />
     <Compile Include="BookConfiguration.cs" />
+    <Compile Include="CategoryConfiguration.cs" />
     <Compile Include="Migrations\201604071439504_SixthMigration.cs" />
     <Compile Include="Migrations\201604071439504_SixthMigration.Designer.cs">
       <DependentUpon>201604071439504_SixthMigration.cs</DependentUpon>
@@ -56,6 +57,18 @@
     <Compile Include="Migrations\201604071446156_EigthMigration.cs" />
     <Compile Include="Migrations\201604071446156_EigthMigration.Designer.cs">
       <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604072100022_NinethMigration.cs" />
+    <Compile Include="Migrations\201604072100022_NinethMigration.Designer.cs">
+      <DependentUpon>201604072100022_NinethMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604072106246_Category.cs" />
+    <Compile Include="Migrations\201604072106246_Category.Designer.cs">
+      <DependentUpon>201604072106246_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604072107256_Category1.cs" />
+    <Compile Include="Migrations\201604072107256_Category1.Designer.cs">
+      <DependentUpon>201604072107256_Category1.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonAddressConfiguration.cs" />
     <Compile Include="MemberConfiguration.cs" />
@@ -118,6 +131,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604071446156_EigthMigration.resx">
       <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604072100022_NinethMigration.resx">
+      <DependentUpon>201604072100022_NinethMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604072106246_Category.resx">
+      <DependentUpon>201604072106246_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604072107256_Category1.resx">
+      <DependentUpon>201604072107256_Category1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

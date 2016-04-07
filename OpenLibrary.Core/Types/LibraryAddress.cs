@@ -2,7 +2,7 @@
 
 namespace OpenLibrary.Core.Types
 {
-    public class LibraryOfficer: Person
+    public class LibraryAddress : Address
     {
     }
 }

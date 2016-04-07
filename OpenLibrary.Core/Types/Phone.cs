@@ -1,4 +1,5 @@
 ﻿using System;
+using OpenLibrary.Core.Types.BaseTypes;
 
 namespace OpenLibrary.Core.Types
 {
@@ -9,7 +10,6 @@ namespace OpenLibrary.Core.Types
         public Guid MemberId { get; set; }
 
         public Person Person { get; set; }
-
 
         public string Number { get; set; }
 

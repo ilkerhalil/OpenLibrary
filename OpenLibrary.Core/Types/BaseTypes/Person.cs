@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Core.Types.BaseTypes
 {
     public class Person : IEntity
     {
