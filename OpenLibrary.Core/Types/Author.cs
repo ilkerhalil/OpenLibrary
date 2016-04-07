@@ -1,4 +1,4 @@
-namespace OpenLibrary.Core.Types
+﻿namespace OpenLibrary.Core.Types
 {
     public class Author : Member
     {

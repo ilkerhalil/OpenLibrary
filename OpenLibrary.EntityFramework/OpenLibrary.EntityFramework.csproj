@@ -43,8 +43,33 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorConfiguration.cs" />
     <Compile Include="BookConfiguration.cs" />
+    <Compile Include="MemberAddressConfiguration.cs" />
     <Compile Include="MemberConfiguration.cs" />
+    <Compile Include="Migrations\201604071248002_firstmigration.cs" />
+    <Compile Include="Migrations\201604071248002_firstmigration.Designer.cs">
+      <DependentUpon>201604071248002_firstmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071308483_SecondMigration.cs" />
+    <Compile Include="Migrations\201604071308483_SecondMigration.Designer.cs">
+      <DependentUpon>201604071308483_SecondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071311113_ThirdMigration.cs" />
+    <Compile Include="Migrations\201604071311113_ThirdMigration.Designer.cs">
+      <DependentUpon>201604071311113_ThirdMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071312461_FourthMigration.cs" />
+    <Compile Include="Migrations\201604071312461_FourthMigration.Designer.cs">
+      <DependentUpon>201604071312461_FourthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071321438_FifthMigration.cs" />
+    <Compile Include="Migrations\201604071321438_FifthMigration.Designer.cs">
+      <DependentUpon>201604071321438_FifthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="OpenLibraryDbContext.cs" />
+    <Compile Include="PhoneConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +81,23 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604071248002_firstmigration.resx">
+      <DependentUpon>201604071248002_firstmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071308483_SecondMigration.resx">
+      <DependentUpon>201604071308483_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071311113_ThirdMigration.resx">
+      <DependentUpon>201604071311113_ThirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071312461_FourthMigration.resx">
+      <DependentUpon>201604071312461_FourthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071321438_FifthMigration.resx">
+      <DependentUpon>201604071321438_FifthMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
