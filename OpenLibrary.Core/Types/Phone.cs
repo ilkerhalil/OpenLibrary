@@ -2,7 +2,7 @@
 
 namespace OpenLibrary.Core.Types
 {
-    public class PhoneNumber : IEntity
+    public class Phone  : IEntity
     {
         public Guid Id { get; set; }
 
@@ -17,7 +17,7 @@ namespace OpenLibrary.Core.Types
 
         public string AreaCode { get; set; }
 
-        public PhoneNumberType PhoneNumberType { get; set; }
+        public PhoneType PhoneType { get; set; }
 
         public bool IsDefaultContactNumber { get; set; }
 

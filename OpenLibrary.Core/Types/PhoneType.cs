@@ -1,6 +1,6 @@
 ﻿namespace OpenLibrary.Core.Types
 {
-    public enum PhoneNumberType : byte
+    public enum PhoneType : byte
     {
         Home, Work
     }
