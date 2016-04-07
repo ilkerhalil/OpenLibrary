@@ -34,7 +34,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Types\Address.cs" />
     <Compile Include="Types\AddressType.cs" />
+    <Compile Include="Types\Author.cs" />
     <Compile Include="Types\Book.cs" />
     <Compile Include="Types\BookByCategories.cs" />
     <Compile Include="Types\BooksAtLibraries.cs" />
@@ -53,8 +55,8 @@
     <Compile Include="Types\MemberAddress.cs" />
     <Compile Include="Types\MemberRequest.cs" />
     <Compile Include="Types\Note.cs" />
-    <Compile Include="Types\PhoneNumber.cs" />
-    <Compile Include="Types\PhoneNumberType.cs" />
+    <Compile Include="Types\Phone.cs" />
+    <Compile Include="Types\PhoneType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
