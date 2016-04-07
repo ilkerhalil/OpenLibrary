@@ -12,10 +12,7 @@ namespace OpenLibrary.EntityFramework
     {
         public AuthorConfiguration()
         {
-            Property(p => p.Id).IsRequired();
-            Property(p => p.FirstName).HasMaxLength(30).IsRequired();
-            Property(p => p.LastName).HasMaxLength(30).IsRequired();
-            Property(p => p.Gender).IsOptional();
+            Property(p => p.BirthDate).IsOptional();
         }
     }
 }

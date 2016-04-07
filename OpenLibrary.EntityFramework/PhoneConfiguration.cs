@@ -13,7 +13,7 @@ namespace OpenLibrary.EntityFramework
             Property(p => p.IsDefaultContactNumber).IsRequired();
             Property(p => p.Number).HasMaxLength(10).IsRequired();
             Property(p => p.MemberId).IsRequired();
-            HasRequired(p => p.Member).WithMany(p => p.PhoneNumbers).HasForeignKey(p => p.MemberId);
+            HasRequired(p => p.Person).WithMany(p => p.PhoneNumbers).HasForeignKey(p => p.MemberId);
         }
     }
 }

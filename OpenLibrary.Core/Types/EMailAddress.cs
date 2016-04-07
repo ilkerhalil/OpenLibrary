@@ -10,7 +10,7 @@ namespace OpenLibrary.Core.Types
 
         public Guid MemberId { get; set; }
 
-        public Member Member { get; set; }
+        public Person Person { get; set; }
 
         public EMailAddressType EMailAddressType { get; set; }
 

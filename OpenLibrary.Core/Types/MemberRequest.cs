@@ -3,7 +3,7 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace OpenLibrary.Core.Types
 {
-    public class MemberRequest : IEntity
+    public class PersonRequest : IEntity
     {
         public Guid Id { get; set; }
 
@@ -13,7 +13,7 @@ namespace OpenLibrary.Core.Types
 
         public Guid MemberId { get; set; }
 
-        public Member Member { get; set; }
+        public Person Person { get; set; }
 
         public DateTime RequestedDate { get; set; }
 

@@ -4,9 +4,9 @@ using OpenLibrary.Core.Types;
 
 namespace OpenLibrary.EntityFramework
 {
-    public class MemberConfiguration : EntityTypeConfiguration<Member>
+    public class PersonConfiguration : EntityTypeConfiguration<Person>
     {
-        public MemberConfiguration()
+        public PersonConfiguration()
         {
             Property(p => p.Id).IsRequired();
             Property(p => p.FirstName).HasMaxLength(30).IsRequired();

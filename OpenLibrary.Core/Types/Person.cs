@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace OpenLibrary.Core.Types
 {
-    public class Member : IEntity
+    public class Person : IEntity
     {
         public Guid Id { get; set; }
-        public IList<Address> MemberAddress { get; set; }
+        public IList<PersonAddress> Address { get; set; }
         public Gender Gender { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

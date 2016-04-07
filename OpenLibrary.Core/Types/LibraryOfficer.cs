@@ -1,6 +1,6 @@
 ﻿namespace OpenLibrary.Core.Types
 {
-    public class LibraryOfficer: Member
+    public class LibraryOfficer: Person
     {
     }
 }

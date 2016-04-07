@@ -45,7 +45,19 @@
   <ItemGroup>
     <Compile Include="AuthorConfiguration.cs" />
     <Compile Include="BookConfiguration.cs" />
-    <Compile Include="MemberAddressConfiguration.cs" />
+    <Compile Include="Migrations\201604071439504_SixthMigration.cs" />
+    <Compile Include="Migrations\201604071439504_SixthMigration.Designer.cs">
+      <DependentUpon>201604071439504_SixthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071443534_SeventhMigration.cs" />
+    <Compile Include="Migrations\201604071443534_SeventhMigration.Designer.cs">
+      <DependentUpon>201604071443534_SeventhMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071446156_EigthMigration.cs" />
+    <Compile Include="Migrations\201604071446156_EigthMigration.Designer.cs">
+      <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonAddressConfiguration.cs" />
     <Compile Include="MemberConfiguration.cs" />
     <Compile Include="Migrations\201604071248002_firstmigration.cs" />
     <Compile Include="Migrations\201604071248002_firstmigration.Designer.cs">
@@ -97,6 +109,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604071321438_FifthMigration.resx">
       <DependentUpon>201604071321438_FifthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071439504_SixthMigration.resx">
+      <DependentUpon>201604071439504_SixthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071443534_SeventhMigration.resx">
+      <DependentUpon>201604071443534_SeventhMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071446156_EigthMigration.resx">
+      <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

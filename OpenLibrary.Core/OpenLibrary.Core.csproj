@@ -34,7 +34,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Types\Address.cs" />
+    <Compile Include="Types\PersonAddress.cs" />
     <Compile Include="Types\AddressType.cs" />
     <Compile Include="Types\Author.cs" />
     <Compile Include="Types\Book.cs" />
@@ -51,8 +51,8 @@
     <Compile Include="Types\Library.cs" />
     <Compile Include="Types\LibraryBaseAddress.cs" />
     <Compile Include="Types\LibraryOfficer.cs" />
-    <Compile Include="Types\Member.cs" />
-    <Compile Include="Types\MemberAddress.cs" />
+    <Compile Include="Types\Person.cs" />
+    <Compile Include="Types\Address.cs" />
     <Compile Include="Types\MemberRequest.cs" />
     <Compile Include="Types\Note.cs" />
     <Compile Include="Types\Phone.cs" />
