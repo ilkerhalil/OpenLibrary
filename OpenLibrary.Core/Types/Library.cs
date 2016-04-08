@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using OpenLibrary.Core.Types.BaseTypes;
+﻿using System.Collections.Generic;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class Library : IEntity
+    public class Library :BaseEntity
     {
-        public Guid Id { get; set; }
+        public int LibraryId { get; set; }
 
-        public List<LibraryOfficer> Officers { get; set; }
+        public ICollection<People> Officers { get; set; }
 
+        public ICollection<Book> Books { get; set; }
 
         public string Description { get; set; }
 

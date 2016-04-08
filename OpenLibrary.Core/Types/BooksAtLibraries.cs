@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace OpenLibrary.Core.Types
+﻿namespace OpenLibrary.Model.Types
 {
     public class BooksAtLibraries
     {
-        public Guid LibraryId { get; set; }
+        public virtual Book Book { get; set; }
 
-        public IList<Book> Books { get; set; }
+        public virtual Library Library { get; set; }
 
     }
 }

@@ -38,109 +38,46 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthorConfiguration.cs" />
-    <Compile Include="BookConfiguration.cs" />
-    <Compile Include="CategoryConfiguration.cs" />
-    <Compile Include="Migrations\201604071439504_SixthMigration.cs" />
-    <Compile Include="Migrations\201604071439504_SixthMigration.Designer.cs">
-      <DependentUpon>201604071439504_SixthMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071443534_SeventhMigration.cs" />
-    <Compile Include="Migrations\201604071443534_SeventhMigration.Designer.cs">
-      <DependentUpon>201604071443534_SeventhMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071446156_EigthMigration.cs" />
-    <Compile Include="Migrations\201604071446156_EigthMigration.Designer.cs">
-      <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604072100022_NinethMigration.cs" />
-    <Compile Include="Migrations\201604072100022_NinethMigration.Designer.cs">
-      <DependentUpon>201604072100022_NinethMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604072106246_Category.cs" />
-    <Compile Include="Migrations\201604072106246_Category.Designer.cs">
-      <DependentUpon>201604072106246_Category.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604072107256_Category1.cs" />
-    <Compile Include="Migrations\201604072107256_Category1.Designer.cs">
-      <DependentUpon>201604072107256_Category1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PersonAddressConfiguration.cs" />
-    <Compile Include="MemberConfiguration.cs" />
-    <Compile Include="Migrations\201604071248002_firstmigration.cs" />
-    <Compile Include="Migrations\201604071248002_firstmigration.Designer.cs">
-      <DependentUpon>201604071248002_firstmigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071308483_SecondMigration.cs" />
-    <Compile Include="Migrations\201604071308483_SecondMigration.Designer.cs">
-      <DependentUpon>201604071308483_SecondMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071311113_ThirdMigration.cs" />
-    <Compile Include="Migrations\201604071311113_ThirdMigration.Designer.cs">
-      <DependentUpon>201604071311113_ThirdMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071312461_FourthMigration.cs" />
-    <Compile Include="Migrations\201604071312461_FourthMigration.Designer.cs">
-      <DependentUpon>201604071312461_FourthMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604071321438_FifthMigration.cs" />
-    <Compile Include="Migrations\201604071321438_FifthMigration.Designer.cs">
-      <DependentUpon>201604071321438_FifthMigration.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Configurations\AddressConfiguration.cs" />
+    <Compile Include="Configurations\ApplicationUserConfiguration.cs" />
+    <Compile Include="Configurations\BookConfiguration.cs" />
+    <Compile Include="Configurations\CategoryConfiguration.cs" />
+    <Compile Include="Configurations\CityConfiguration.cs" />
+    <Compile Include="Configurations\CountryConfiguration.cs" />
+    <Compile Include="Configurations\EmailAddressConfiguration.cs" />
+    <Compile Include="Configurations\LibraryConfiguration.cs" />
+    <Compile Include="Configurations\NoteConfiguration.cs" />
+    <Compile Include="Configurations\PeopleConfiguration.cs" />
+    <Compile Include="Configurations\PhoneConfiguration.cs" />
+    <Compile Include="Configurations\RequestConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\ApplicationUser.cs" />
     <Compile Include="OpenLibraryDbContext.cs" />
-    <Compile Include="PhoneConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenLibrary.Core\OpenLibrary.Core.csproj">
+    <ProjectReference Include="..\OpenLibrary.Core\OpenLibrary.Model.csproj">
       <Project>{BD6AF079-7417-4EC8-B4EA-060BD190290B}</Project>
-      <Name>OpenLibrary.Core</Name>
+      <Name>OpenLibrary.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604071248002_firstmigration.resx">
-      <DependentUpon>201604071248002_firstmigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071308483_SecondMigration.resx">
-      <DependentUpon>201604071308483_SecondMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071311113_ThirdMigration.resx">
-      <DependentUpon>201604071311113_ThirdMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071312461_FourthMigration.resx">
-      <DependentUpon>201604071312461_FourthMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071321438_FifthMigration.resx">
-      <DependentUpon>201604071321438_FifthMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071439504_SixthMigration.resx">
-      <DependentUpon>201604071439504_SixthMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071443534_SeventhMigration.resx">
-      <DependentUpon>201604071443534_SeventhMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604071446156_EigthMigration.resx">
-      <DependentUpon>201604071446156_EigthMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604072100022_NinethMigration.resx">
-      <DependentUpon>201604072100022_NinethMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604072106246_Category.resx">
-      <DependentUpon>201604072106246_Category.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604072107256_Category1.resx">
-      <DependentUpon>201604072107256_Category1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

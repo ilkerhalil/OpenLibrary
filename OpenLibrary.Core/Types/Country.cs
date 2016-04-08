@@ -1,11 +1,7 @@
-using System;
-using OpenLibrary.Core.Types.BaseTypes;
-
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class Country : IEntity
+    public class Country :BaseEntity
     {
-        public Guid Id { get; set; }
 
         public string CountryCode { get; set; }
 

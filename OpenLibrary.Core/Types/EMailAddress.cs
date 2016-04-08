@@ -1,17 +1,17 @@
 ﻿using System;
-using OpenLibrary.Core.Types.BaseTypes;
+using OpenLibrary.Model.Types.Enumarations;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class EMailAddress : IEntity
+    public class EMailAddress :BaseEntity
     {
-        public Guid Id { get; set; }
+        public int EMailAddressId { get; set; }
 
         public string EMail { get; set; }
 
-        public Guid MemberId { get; set; }
+        public Guid PeopleId { get; set; }
 
-        public Person Person { get; set; }
+        public People People { get; set; }
 
         public EMailAddressType EMailAddressType { get; set; }
 

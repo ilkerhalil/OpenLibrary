@@ -1,13 +1,16 @@
 ﻿using System;
-using OpenLibrary.Core.Types.BaseTypes;
+using System.Collections.Generic;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class Category : IEntity
+    public class Category :BaseEntity
     {
-        public Guid Id { get; set; }
+
+        public int CategoryId { get; set; }
 
         public string CategoryName { get; set; }
+
+        public ICollection<Book> Books { get; set; }
 
     }
 }

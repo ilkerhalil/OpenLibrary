@@ -1,4 +1,4 @@
-﻿namespace OpenLibrary.Core
+﻿namespace OpenLibrary.Model.Types.Enumarations
 {
     public enum AddressType:byte
     {

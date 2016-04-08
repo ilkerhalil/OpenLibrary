@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLibrary.Core", "OpenLibrary.Core\OpenLibrary.Core.csproj", "{BD6AF079-7417-4EC8-B4EA-060BD190290B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLibrary.Model", "OpenLibrary.Core\OpenLibrary.Model.csproj", "{BD6AF079-7417-4EC8-B4EA-060BD190290B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLibrary.EntityFramework", "OpenLibrary.EntityFramework\OpenLibrary.EntityFramework.csproj", "{09694F75-EDD1-4C5B-B73C-ADA846DEAA41}"
 EndProject

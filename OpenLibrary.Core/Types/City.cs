@@ -1,11 +1,8 @@
-﻿using System;
-using OpenLibrary.Core.Types.BaseTypes;
-
-namespace OpenLibrary.Core.Types
+﻿namespace OpenLibrary.Model.Types
 {
-    public class City : IEntity
+    public class City :BaseEntity
     {
-        public Guid Id { get; set; }
+        
 
         public string CityCode { get; set; }
 

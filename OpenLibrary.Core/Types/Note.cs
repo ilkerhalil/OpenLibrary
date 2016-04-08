@@ -1,13 +1,12 @@
 ﻿using System;
-using OpenLibrary.Core.Types.BaseTypes;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class Note : IEntity
+    public class Note :BaseEntity
     {
-        public Guid Id { get; set; }
-        public Guid MemberId { get; set; }
-        public Person Person { get; set; }
+        public int NoteId { get; set; }
+        public Guid PeopleId { get; set; }
+        public People People { get; set; }
         public string Description { get; set; }
 
     }

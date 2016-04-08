@@ -9,14 +9,8 @@ namespace OpenLibrary.EntityFramework.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
+            AutomaticMigrationsEnabled = false;
         }
-        public void Seed()
-        {
-            Seed(new OpenLibraryDbContext());
-        }
-
 
         protected override void Seed(OpenLibrary.EntityFramework.OpenLibraryDbContext context)
         {

@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
-using OpenLibrary.Core.Types.BaseTypes;
 
-namespace OpenLibrary.Core.Types
+namespace OpenLibrary.Model.Types
 {
-    public class Request : IEntity
+    public class Request :BaseEntity
     {
-        public Guid Id { get; set; }
+        public int RequestId { get; set; }
 
-        public Guid BookId { get; set; }
+        public string Isbn  { get; set; }
 
         public Book Book { get; set; }
 
         public Guid MemberId { get; set; }
 
-        public Person Person { get; set; }
+        public People People { get; set; }
 
         public DateTime RequestedDate { get; set; }
 
